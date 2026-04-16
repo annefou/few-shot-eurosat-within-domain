@@ -28,12 +28,10 @@ jobs:
         run: |
           pip install jupyter-book jupytext myst-nb
 
-      - name: Convert Jupytext to notebooks
-        run: |
-          jupytext --to notebook 01_few_shot_eurosat.py
-
       - name: Build Jupyter Book
-        run: jupyter-book build .
+        run: |
+          jupyter-book build . --verbose
+          ls -la _build/html/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

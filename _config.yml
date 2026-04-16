@@ -5,6 +5,10 @@ copyright: "2026"
 execute:
   execute_notebooks: "off"
 
+parse:
+  myst_enable_extensions:
+    - colon_fence
+
 repository:
   url: https://github.com/annefou/few-shot-eurosat-within-domain
   branch: main
@@ -14,6 +18,10 @@ launch_buttons:
 
 sphinx:
   config:
+    nb_custom_formats:
+      .py:
+        - jupytext.reads
+        - fmt: py:percent
     html_theme_options:
       repository_url: https://github.com/annefou/few-shot-eurosat-within-domain
       use_repository_button: true
