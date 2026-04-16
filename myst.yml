@@ -1,18 +1,32 @@
 version: 1
 project:
   title: "Few-Shot EuroSAT Within-Domain"
-  subtitle: "Common to Rare Land Cover Transfer with Prototypical Networks"
-  authors:
-    - name: Anne Fouilloux
-      orcid: 0000-0002-1784-2920
-      affiliations:
-        - LifeWatch ERIC
+  short_title: "Few-Shot EuroSAT"
+  abstract: >
+    Within-domain few-shot classification on EuroSAT Sentinel-2 imagery
+    using Prototypical Networks. Tests transfer from common to rare land
+    cover types, simulating Natura 2000 habitat monitoring with limited
+    labeled examples.
+  subject: machine learning
+  keywords:
+    - few-shot learning
+    - prototypical networks
+    - remote sensing
+    - Sentinel-2
+    - EuroSAT
+    - land cover
+    - replication study
   github: https://github.com/annefou/few-shot-eurosat-within-domain
-  license: MIT
+  open_access: true
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  date: 2026-04-16
   toc:
-    - file: README.md
+    - file: index.md
     - file: 01_few_shot_eurosat.ipynb
-  exports:
-    - format: html
+
 site:
-  title: "Few-Shot EuroSAT Within-Domain"
+  template: book-theme
+  options:
+    logo_text: Few-Shot EuroSAT
