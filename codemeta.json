@@ -1,13 +1,14 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "name": "Few-Shot Classification on EuroSAT Sentinel-2 Imagery",
-  "description": "Replication of Prototypical Networks (Snell et al., 2017) applied to Sentinel-2 satellite imagery for land cover classification, following the cross-domain few-shot learning benchmark of Guo et al. (2020).",
-  "version": "0.1.0",
+  "@id": "https://doi.org/10.5281/zenodo.19607662",
+  "name": "Few-Shot EuroSAT Within-Domain: Common to Rare Land Cover Transfer",
+  "description": "Within-domain few-shot classification on EuroSAT Sentinel-2 imagery using Prototypical Networks. Tests transfer from common to rare land cover types, simulating Natura 2000 habitat monitoring.",
+  "version": "0.1.1",
   "dateCreated": "2026-04-16",
   "dateModified": "2026-04-16",
   "license": "https://spdx.org/licenses/MIT",
-  "codeRepository": "https://github.com/annefou/few-shot-eurosat",
+  "codeRepository": "https://github.com/annefou/few-shot-eurosat-within-domain",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "Python",
