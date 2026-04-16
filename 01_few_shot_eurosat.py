@@ -73,7 +73,14 @@ torch.manual_seed(SEED)
 N_WAY = 5       # number of classes per episode
 K_SHOT = 5      # support examples per class
 N_QUERY = 15    # query examples per class
-N_EPISODES = 600  # evaluation episodes (matching Guo et al.)
+
+# CI mode: fewer episodes for faster runs on CPU (set CI=true in env)
+CI_MODE = os.environ.get("CI", "").lower() in ("true", "1")
+N_EPISODES = 100 if CI_MODE else 600      # evaluation episodes
+N_TRAIN_EPISODES_CFG = 500 if CI_MODE else 2000  # training episodes
+
+if CI_MODE:
+    print("CI mode: reduced episodes for faster execution")
 
 # %% [markdown]
 # ## 1. Load EuroSAT and inspect
@@ -218,7 +225,7 @@ print(f"Support: {s_img.shape}, Query: {q_img.shape}")
 
 # %%
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-N_TRAIN_EPISODES = 2000
+N_TRAIN_EPISODES = N_TRAIN_EPISODES_CFG
 
 print(f"Training on {len(BASE_CLASSES)} base classes for {N_TRAIN_EPISODES} episodes...")
 model.train()
