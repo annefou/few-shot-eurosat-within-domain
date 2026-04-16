@@ -1,0 +1,69 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Few-Shot Classification on EuroSAT Sentinel-2 Imagery",
+  "description": "Replication of Prototypical Networks (Snell et al., 2017) applied to Sentinel-2 satellite imagery for land cover classification, following the cross-domain few-shot learning benchmark of Guo et al. (2020).",
+  "version": "0.1.0",
+  "dateCreated": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/annefou/few-shot-eurosat",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "Python",
+    "version": "3.12"
+  },
+  "runtimePlatform": "PyTorch 2.11",
+  "operatingSystem": ["Linux", "macOS"],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Anne",
+      "familyName": "Fouilloux",
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "LifeWatch ERIC"
+      }
+    }
+  ],
+  "keywords": [
+    "few-shot learning",
+    "prototypical networks",
+    "remote sensing",
+    "Sentinel-2",
+    "EuroSAT",
+    "land cover classification",
+    "meta-learning",
+    "replication study",
+    "FORRT"
+  ],
+  "softwareRequirements": [
+    "python >=3.12",
+    "pytorch >=2.0",
+    "torchvision >=0.15",
+    "numpy",
+    "matplotlib"
+  ],
+  "referencePublication": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Prototypical Networks for Few-shot Learning",
+      "author": ["Jake Snell", "Kevin Swersky", "Richard Zemel"],
+      "datePublished": "2017",
+      "url": "https://arxiv.org/abs/1703.05175"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "A Broader Study of Cross-Domain Few-Shot Learning",
+      "author": ["Yunhui Guo", "Noel C. F. Codella", "Leonid Karlinsky", "James V. Codella", "John R. Smith", "Kate Saenko", "Tajana Rosing", "Rogerio Feris"],
+      "datePublished": "2020",
+      "@id": "https://doi.org/10.1007/978-3-030-58583-9_8"
+    }
+  ],
+  "isPartOf": {
+    "@type": "Organization",
+    "name": "Science Live",
+    "url": "https://platform.sciencelive4all.org"
+  }
+}

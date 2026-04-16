@@ -1,0 +1,42 @@
+{
+  "method": "Prototypical Networks (Snell et al. 2017)",
+  "original_paper_doi": "10.48550/arXiv.1703.05175",
+  "benchmark_paper_doi": "10.1007/978-3-030-58583-9_8",
+  "dataset": "EuroSAT (Sentinel-2 RGB, 27k images, 10 classes)",
+  "device": "mps",
+  "n_episodes": 600,
+  "base_classes": [
+    "AnnualCrop",
+    "Forest",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "Residential",
+    "SeaLake"
+  ],
+  "novel_classes": [
+    "HerbaceousVegetation",
+    "PermanentCrop",
+    "River"
+  ],
+  "results": {
+    "5way_1shot": {
+      "accuracy": "0.715",
+      "ci95": "0.010"
+    },
+    "5way_5shot": {
+      "accuracy": "0.817",
+      "ci95": "0.009"
+    },
+    "5way_20shot": {
+      "accuracy": "0.843",
+      "ci95": "0.007"
+    }
+  },
+  "novel_only": {
+    "3way_5shot": {
+      "accuracy": "0.538",
+      "ci95": "0.007"
+    }
+  }
+}
