@@ -93,7 +93,7 @@ transform = transforms.Compose([
                          std=[0.229, 0.224, 0.225]),
 ])
 
-dataset = EuroSAT(root=str(DATA_DIR), download=False, transform=transform)
+dataset = EuroSAT(root=str(DATA_DIR), download=True, transform=transform)
 
 print(f"Total images: {len(dataset)}")
 print(f"Classes ({len(dataset.classes)}):")
