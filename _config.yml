@@ -1,0 +1,20 @@
+title: "Few-Shot EuroSAT Within-Domain"
+author: "Anne Fouilloux"
+copyright: "2026"
+
+execute:
+  execute_notebooks: "off"
+
+repository:
+  url: https://github.com/annefou/few-shot-eurosat-within-domain
+  branch: main
+
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+
+sphinx:
+  config:
+    html_theme_options:
+      repository_url: https://github.com/annefou/few-shot-eurosat-within-domain
+      use_repository_button: true
+      use_issues_button: true
