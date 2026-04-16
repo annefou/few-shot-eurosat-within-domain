@@ -1,4 +1,0 @@
-format: jb-book
-root: README
-chapters:
-  - file: 01_few_shot_eurosat

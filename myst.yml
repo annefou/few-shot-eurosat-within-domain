@@ -1,0 +1,18 @@
+version: 1
+project:
+  title: "Few-Shot EuroSAT Within-Domain"
+  subtitle: "Common to Rare Land Cover Transfer with Prototypical Networks"
+  authors:
+    - name: Anne Fouilloux
+      orcid: 0000-0002-1784-2920
+      affiliations:
+        - LifeWatch ERIC
+  github: https://github.com/annefou/few-shot-eurosat-within-domain
+  license: MIT
+  toc:
+    - file: README.md
+    - file: 01_few_shot_eurosat.ipynb
+  exports:
+    - format: html
+site:
+  title: "Few-Shot EuroSAT Within-Domain"
