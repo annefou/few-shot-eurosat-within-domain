@@ -56,15 +56,13 @@ The chain follows the [FORRT](https://forrt.org/) (Framework for Open and Reprod
 4. **FORRT Replication Study** — what we did, how, and why it differs from the original
 5. **FORRT Replication Outcome** — the result: does the claim hold for satellite imagery?
 
-<!-- TODO: add nanopub URIs once published
 | Step | Nanopublication |
 |------|----------------|
-| Paper quotation | [view](https://platform.sciencelive4all.org/np/?uri=...) |
-| AIDA sentence | [view](https://platform.sciencelive4all.org/np/?uri=...) |
-| FORRT Claim | [view](https://platform.sciencelive4all.org/np/?uri=...) |
-| FORRT Study | [view](https://platform.sciencelive4all.org/np/?uri=...) |
-| FORRT Outcome | [view](https://platform.sciencelive4all.org/np/?uri=...) |
--->
+| Paper quotation | [view](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RA7g02DAdAV4zUy1_u7_lD7GnTDPkbnpyUIsfGDmv-yyE) |
+| AIDA sentence | [view](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RAnb5--dk_Xp5iV1nZWXLdY_TrvLReMfYwaHcaRyUAI8I) |
+| FORRT Claim | [view](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/np/RAPEj_VkTBh17NfklyuB0klzxobwyp2dsx6vJRByVs148) |
+| FORRT Replication Study | [view](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RALGj6JatoumnOiiTUie18OUEVGpeAKuhvUkLpAa2Wjjc) |
+| FORRT Replication Outcome | [view](https://platform.sciencelive4all.org/np/?uri=https://w3id.org/sciencelive/np/RAUS6GbT3Bu-Np0Ue73q58G_c2HilLhh95Y2b8W18o--M) |
 
 ### Want to publish your own replication?
 
