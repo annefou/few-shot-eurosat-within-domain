@@ -58,14 +58,10 @@
 # No retraining is needed for new classes — just provide a few examples
 # and the model computes prototypes on the fly.
 #
-# ```{figure} https://miro.medium.com/v2/resize:fit:1400/1*gCgCjGr0EjmkCGJGMwUBIA.png
-# :alt: Prototypical Networks diagram
-# :width: 80%
-#
-# Prototypical Networks compute a prototype (star) for each class from
-# support examples, then classify queries by nearest prototype.
-# Source: Snell et al. (2017).
-# ```
+# In practice: given 5 labeled images of "Forest" and 5 of "River",
+# the model averages their features to create a Forest prototype and
+# a River prototype. A new image is classified by checking which
+# prototype it's closest to in feature space.
 #
 # ## The data: EuroSAT
 #
